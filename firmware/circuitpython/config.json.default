@@ -1,0 +1,85 @@
+{
+	"system": {
+		"id": "2016750001",
+		"interval_preset": 0,
+		"interval_custom_min": 60,
+		"max_sensors_per_seg": 15,
+		"sleep_between_polls": true,
+		"sleep_mode": "deep",
+		"log_level": "INFO",
+		"ota_url": "http://47.93.29.232:10013/ota",
+		"api_url": "http://47.93.29.232:10013/api",
+		"expansion_ports_enable": false
+	},
+	"ble": {
+		"enabled": true,
+		"name": "UniControl",
+		"pin": "1234"
+	},
+	"network": {
+		"priority": ["4g", "wifi", "ethernet", "usb_cdc"],
+		"register_server": "47.93.29.232",
+		"register_port": 8000,
+		"mqtt_broker": "47.95.250.46",
+		"mqtt_port": 1883,
+		"mqtt_user": "rasberdevice",
+		"mqtt_pass": "***",
+		"mqtt_topic": "controllerdata-cirpy",
+		"4g": {
+			"enabled": true,
+			"modem": "SIM7672E",
+			"baud": 115200,
+			"apn": "cmnet",
+			"cops": "0",
+			"psm_time_min": 60
+		},
+		"wifi": {
+			"enabled": false,
+			"ssid": "",
+			"password": "***"
+		},
+		"ethernet": {
+			"enabled": false,
+			"type": "W5500",
+			"dhcp": true,
+			"static_ip": "",
+			"gateway": "",
+			"subnet": "",
+			"dns": ""
+		}
+	},
+	"rs485_1": {
+		"enabled": true,
+		"uart_id": 1,
+		"baud": 9600,
+		"protocol": "PRIVATE_V2026",
+		"power_on_delay_ms": 100,
+		"sensors": []
+	},
+	"rs485_2": {
+		"enabled": true,
+		"uart_id": 2,
+		"baud": 9600,
+		"protocol": "PRIVATE_V2026",
+		"power_on_delay_ms": 100,
+		"sensors": []
+	},
+	"rs485_3": {
+		"enabled": false,
+		"type": "sc16is752",
+		"channel": 0,
+		"baud": 9600,
+		"protocol": "PRIVATE_V2026",
+		"power_on_delay_ms": 100,
+		"sensors": []
+	},
+	"rs485_4": {
+		"enabled": false,
+		"type": "sc16is752",
+		"channel": 1,
+		"baud": 9600,
+		"protocol": "PRIVATE_V2026",
+		"power_on_delay_ms": 100,
+		"sensors": []
+	}
+}

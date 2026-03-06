@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+._*
+
+# Android
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+android/local.properties
+android/key.jks
+*.apk
+*.aab
+
+# Firmware
+firmware/*.bin
+firmware/*.pdf
+
+# General
+*.pdf
+*.pyc
+__pycache__/
+.env
