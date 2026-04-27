@@ -1,0 +1,16 @@
+.DS_Store
+._*
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+android/local.properties
+android/key.jks
+*.apk
+*.aab
+firmware/*.bin
+firmware/*.pdf
+*.pdf
+*.pyc
+__pycache__/
+.env
